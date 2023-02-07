@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  backend:
+    container_name: nodejs
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 4000:4000
+    
