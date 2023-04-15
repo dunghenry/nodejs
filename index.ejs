@@ -13,9 +13,14 @@
     <h2>
         <%= user.age %>
     </h2>
-    <h2>
+    <h2 onclick="hello('<%= user.age %>')">
         <%= user.fullName %>
     </h2>
+    <script>
+        function hello(data) {
+            alert(data)
+        }
+    </script>
 </body>
 
 </html>
